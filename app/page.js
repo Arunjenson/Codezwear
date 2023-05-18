@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div>
+    <div className="bg-white">
       <img src="/hero.jpg" alt="" className='w-full max-h-[500px] mx-auto' mx-3 />
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
