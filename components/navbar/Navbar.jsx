@@ -7,7 +7,12 @@ import { BsFillBagCheckFill } from 'react-icons/bs';
 const Navbar = () => {
   const toggleCart = () =>{
       if (sideBar.current.classList.contains('translate-x-full')){
-        sideBar.current.classList.toggle('translate-x-0')
+        sideBar.current.classList.add('translate-x-0');
+        sideBar.current.classList.remove('translate-x-full');
+      }
+      else{
+        sideBar.current.classList.remove('translate-x-0');
+        sideBar.current.classList.add('translate-x-full');
       }
   }
   const sideBar = useRef();
